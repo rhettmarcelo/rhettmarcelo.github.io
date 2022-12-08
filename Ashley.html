@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>CS 4300</title>
+   </head>
+   <style type = "text/css">
+      body  { background-image: url(back1.jpg);
+              background-position: bottom right;
+              background-repeat: repeat;
+              background-attachment: fixed;
+              font-family: georgia, times, serif;
+              font-weight: bold;}
+        em     { font-weight: bold;
+                color: black; }
+      h1, em   { text-decoration: underline; }
+          p {font-size: 12pt;
+              color: Black;
+              text-indent: 0em;}
+            p
+              { margin: 0.9em 0em; }
+              /* styles for smartphones with screen widths 480px or smaller */
+              @media handheld and (max-width: 480px),
+                 screen and (max-device-width: 480px),
+                 screen and (max-width: 480px)
+              {
+                 div {
+                    -webkit-column-count: 2;
+                    column-count: 2; }
+              }
+              /* styles for devices with screen widths of 481px to 1024px */
+              @media only screen and (min-width: 481px) and
+                 (max-width: 1024px)
+              {
+                 div {
+                    -webkit-column-count: 2;
+                    column-count: 2;
+                    -webkit-column-gap: 30px;
+                    column-gap: 30px;
+                    -webkit-column-rule: 1px outset black;
+                    column-rule: 1px outset black; }
+              }
+              /* styles for devices with screen widths of 1025px or greater */
+              @media only screen and (min-width: 1025px)
+              {
+                 div {
+                    -webkit-c4olumn-count: 3;
+                    column-count: 3;
+                    -webkit-column-gap: 30px;
+                    column-gap: 30px;
+                    -webkit-column-rule: 1px outset black;
+                    column-rule: 1px outset black; }
+              }
+              div {
+                    width: 50px;
+                    height: 50px;
+                    background-color: red;
+                    position: relative;
+                    animation-name: example;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                  }
+
+                  @keyframes example {
+                    0%   {background-color:red; left:800px; top:-250px;}
+                    25%  {background-color:yellow; left:1000px; top:-250px;}
+                    50%  {background-color:blue; left:1000px; top:150px;}
+                    75%  {background-color:green; left:800px; top:150px;}
+                    100% {background-color:red; left:800px; top:-250px;}
+                  }
+                     </style>
+   <body>
+
+
+     <h1>Ashley Monterroso's Website</h1>
+
+       <p>Hello world, my name is Ashley Monterroso and this is my first Website. I am a College Student majoring in Computer Science at <a href = "http://www.uhd.edu">University of Houston-Downtown</a>.</p>
+       <p> I am a first generation college student.I was always interested in technology since I was little. I enjoyed learning how to build computers, paly video games with my dad, and I enjoy seeing what technology can do.</p>
+       <p>This experience is my major motivation to follow programming and software engineering careers. I want to help others using technology. Being a Computer Science student, it has improved my understanding of the dedication programmers have and how complex and fascinating their career is. </p>
+
+       <li>I'm really excited to learn:
+          <ul><li>HTML</li>
+             <li>PHP </li>
+             <li>Javascript</li>
+             <li>CSS</li>
+             <li>Apache</li>
+           </ul>
+
+           <table border = "2">
+
+              <!-- the <caption> tag summarizes the table's -->
+              <!-- contents (this helps visually impaired people) -->
+              <caption><strong>Programming Languages That I know </strong></caption>
+
+              <!-- the <thead> section appears first in the table -->
+              <!-- it formats the table header area -->
+              <thead>
+                 <tr> <!-- <tr> inserts a table row -->
+                    <th>Programming Language</th> <!-- insert a heading cell -->
+                    <th>Year Created</th>
+                 </tr>
+              </thead>
+
+              <!-- all table content is enclosed -->
+              <!-- within the <tbody> -->
+              <tbody>
+                 <tr>
+                    <td>C++</td>
+                    <td>1983</td>
+                 </tr>
+                 <tr>
+                    <td>Python</td>
+                    <td>1991</td>
+                 </tr>
+                 <tr>
+                    <td>Java</td>
+                    <td>1995</td>
+                 </tr>
+              </tbody>
+           </table>
+           <p><a href = "http://www.google.com">Google</a> is a great company with inovating tools that help people from all around the world.</p>
+             <div> </div>
+        <img src = "/img/tennis-snoopy.gif" width "300" height = "200" style= "position:relative; left:1200px; top:-300px;">
+   </body>
+</html>
