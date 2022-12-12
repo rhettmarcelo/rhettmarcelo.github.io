@@ -5,3 +5,7 @@ $(document).ready(function() {
       },1000); 
     });
   });
+
+function websiteVisits(response) {
+    document.querySelector("#visits").textContent = response.value;
+}
